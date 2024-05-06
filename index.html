@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="сервис, диагностика, ремонт ноутбука, ремонт техники">
+  <meta name="description" content="Мы являемся авторизованным сервисным центром по ремонту техники">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Сервисный центр</title>
+<link href="style.css" rel="stylesheet"></head>
+
+<body class="body">
+  <div class="body__container">
+
+    <aside class="burger-menu">
+      <header class="burger-menu__header">
+        <button class="icon close scale"><img src="./img/icon/close.svg" alt="Кнопка закрыть меню"></button>
+        <a class="logo burger-menu__logo" href="#"><img src="./img/logo.svg" alt="Логотип компании"></a>
+        <button class="icon search scale"><img src="./img/icon/search.svg" alt="Кнопка поиск"></button>
+      </header>
+      <nav class="burger-menu__nav">
+        <ul class="list__reset">
+          <li class="burger-menu__item burger-menu__item--active"><a href="#">Ремонт техники</a></li>
+          <li class="burger-menu__item"><a href="#">Услуги и сервисы</a></li>
+          <li class="burger-menu__item"><a href="#">Корпоративным клиентам</a></li>
+          <li class="burger-menu__item"><a href="#">Продавцам техники</a></li>
+          <li class="burger-menu__item"><a href="#">Партнерам</a></li>
+          <li class="burger-menu__item"><a href="#">Производителям</a></li>
+          <li class="burger-menu__item"><a href="#">Наши сервисные центры</a></li>
+          <li class="burger-menu__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <footer class="burger-menu__contacts">
+        <ul class="options-list list__reset">
+          <li>
+            <button class="icon call scale">
+              <img src="./img/icon/call.svg" alt="Кнопка звонок">
+            </button>
+          </li>
+          <li>
+            <button class="icon chat scale">
+              <img src="./img/icon/chat.svg" alt="Кнопка открыть чат">
+            </button>
+          </li>
+          <li>
+            <button class="icon scale">
+              <img src="./img/icon/profile.svg" alt="Кнопка открыть профиль">
+            </button>
+          </li>
+        </ul>
+        <a class="burger-menu__mail" href="mailto:mail@gps.com">mail@gps.com</a>
+        <a class="burger-menu__phone" href="tel:8 800 890 8900">8 800 890 8900</a>
+        <ul class="burger-menu__lang list__reset">
+          <li>
+            <button class="lang__link lang__link--active">RU</button>
+          </li>
+          <li><button class="lang__link scale">EN</button></li>
+          <li><button class="lang__link scale">CH</button></li>
+        </ul>
+      </footer>
+    </aside>
+
+    <aside class="modal feedback">
+      <header class="modal__header">
+        <button class="icon feedback__close scale"><img src="./img/icon/close.svg" alt="Кнопка закрыть"></button>
+      </header>
+      <p class="modal__title">Обратная связь</p>
+      <form class="modal__form" method="post">
+        <textarea class="modal__textarea" placeholder="Имя"></textarea>
+        <textarea class="modal__textarea" placeholder="Телефон"></textarea>
+        <textarea class="modal__textarea" placeholder="Электронная почта"></textarea>
+        <textarea class="modal__textarea modal__message" placeholder="Сообщение"></textarea>
+        <p class="modal__agreement">
+          Нажимая “отправить”, вы даете согласие
+          <span class="modal__link">
+            на обработку персональных данных
+          </span>
+          и соглашаетесь с нашей
+          <span class="modal__link">политикой конфиденциальности</span>
+        </p>
+        <button type="submit" class="modal__button scale">
+          Отправить
+        </button>
+      </form>
+    </aside>
+
+    <aside class="modal callback">
+      <header class="modal__header">
+        <button class="icon callback__close scale"><img src="./img/icon/close.svg" alt="Кнопка закрыть"></button>
+      </header>
+      <p class="modal__title">Заказать звонок</p>
+      <form class="modal__form" method="post">
+        <textarea class="modal__textarea" placeholder="Телефон" name="" id=""></textarea>
+        <p class="modal__agreement">
+          Нажимая “отправить”, вы даете согласие
+          <span class="modal__link">
+            на обработку персональных данных
+          </span>
+          и соглашаетесь с нашей
+          <span class="modal__link">политикой конфиденциальности</span>
+        </p>
+        <button type="submit" class="modal__button scale">
+          Отправить
+        </button>
+      </form>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <button class="icon open scale"><img src="./img/icon/burger_open.svg" alt="Кнопка открыть меню"></button>
+        <a class="logo header__logo" href="#"><img src="./img/logo.svg" alt="Логотип компании"></a>
+        <ul class="options-list list__reset">
+          <li>
+            <button class="icon call scale">
+              <img src="./img/icon/call.svg" alt="Кнопка звонок">
+            </button>
+          </li>
+          <li>
+            <button class="icon chat scale">
+              <img src="./img/icon/chat.svg" alt="Кнопка открыть чат">
+            </button>
+          </li>
+          <li>
+            <button class="icon scale">
+              <img src="./img/icon/profile.svg" alt="Кнопка открыть профиль">
+            </button>
+          </li>
+        </ul>
+        <button class="icon header__repair scale"><img src="./img/icon/repair.svg" alt="Кнопка оставить заявку"></button>
+        <button class="icon header__checkStatus scale"><img src="./img/icon/checkstatus.svg" alt="Кнопка узнать статус ремонта"></button>
+      </header>
+
+      <section class="service">
+        <h1 class="title">
+          Услуги и сервисы
+          <button class="title__button scale">
+            <span class="button__textContent">Оставить заявку</span>
+            <img class="icon" src="./img/icon/repair.svg">
+          </button>
+          <button class="title__button scale">
+            <span class="button__textContent">Статус ремонта</span>
+            <img class="icon" src="./img/icon/checkstatus.svg">
+          </button>
+        </h1>
+        <nav class="menu">
+          <ul class="list__reset">
+            <li class="menu__button menu__button--active">
+              <a>Ремонтируемые устройства</a>
+            </li>
+            <li class="menu__button"><a>Дополнительные услуги</a></li>
+            <li class="menu__button"><a>Цены на услуги</a></li>
+            <li class="menu__button"><a>Адреса сервисных центров</a></li>
+            <li class="menu__button"><a>Специальные цены</a></li>
+            <li class="menu__button"><a>Отзывы</a></li>
+          </ul>
+        </nav>
+        <article class="article">
+          <div class="article__container">
+            <p class="article__first">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="article__second">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера<span class="article__third">, что подтверждает большое 
+              количество постоянных клиентов. Мы гордимся тем, что к нам обращаются
+              по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              A amet ut qui nemo inventore, dignissimos quis libero officia
+              maiores, laboriosam corporis nulla, voluptatibus necessitatibus 
+              nam deserunt neque! Molestiae, velit, sunt molestias illum harum 
+              magni at minima beatae placeat id optio! Quos molestiae sint rem! 
+              Libero suscipit delectus molestias soluta numquam.
+            </p>
+          </div>
+          <button class="readmore scale">
+            <img class="readmore__ic" src="./img/icon/ic.svg" alt="Кнопка показать все">
+            <p class="readmore__text">Читать далее</p>
+          </button>
+        </article>
+        <img class="article__img" src="./img/foto.jpg" alt="Вывеска компании">
+      </section>
+
+      <section class="brands">
+        <header class="header">Ремонт техники различных брендов</header>
+        <article class="swiper">
+          <ul class="swiper-wrapper list__reset">
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img src="./img/lenovo.svg" alt="Бренд Lenovo">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img src="./img/samsung.svg" alt="Бренд Samsung">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img class="apple__icon" src="./img/apple.svg" alt="Бренд Apple">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img src="./img/viewsonic.svg" alt="Бренд Viewsonic">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img src="./img/bosch.svg" alt="Бренд Bosch">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link brand__hp" href="#">
+                <img src="./img/hp.svg" alt="Бренд Hp">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img src="./img/acer.svg" alt="Бренд Acer">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img src="./img/sony.svg" alt="Бренд Sony">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img src="./img/lenovo.svg" alt="Бренд Lenovo">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img src="./img/samsung.svg" alt="Бренд Samsung">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide brand">
+              <a class="brand__link" href="#">
+                <img class="apple__icon" src="./img/apple.svg" alt="Бренд Apple">
+                <img src="./img/icon/go.svg" class="scale" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </article>
+        <button type="button" class="showAll scale">
+          <img class="showAll__ic" src="./img/icon/ic.svg" alt="Показать все">
+          <p class="showAll__text">Показать все</p>
+        </button>
+      </section>
+
+      <section class="technics">
+        <header class="header">Ремонт различных видов техники</header>
+        <article class="swiper">
+          <ul class="swiper-wrapper list__reset">
+            <li class="swiper-slide technic">
+              <a class="technic__link" href="#">
+                Ремонт ноутбуков
+                <img class="technic__img scale" src="./img/icon/go.svg" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide technic">
+              <a class="technic__link" href="#">
+                Ремонт планшетов
+                <img class="technic__img scale" src="./img/icon/go.svg" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide technic">
+              <a class="technic__link" href="#">
+                Ремонт ПК
+                <img class="technic__img scale" src="./img/icon/go.svg" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide technic">
+              <a class="technic__link" href="#">
+                Ремонт ноутбуков
+                <img class="technic__img scale" src="./img/icon/go.svg" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide technic">
+              <a class="technic__link" href="#">
+                Ремонт планшетов
+                <img class="technic__img scale" src="./img/icon/go.svg" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide technic">
+              <a class="technic__link" href="#">
+                Ремонт ПК
+                <img class="technic__img scale" src="./img/icon/go.svg" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide technic">
+              <a class="technic__link" href="#">
+                Ремонт ноутбуков
+                <img class="technic__img scale" src="./img/icon/go.svg" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+            <li class="swiper-slide technic">
+              <a class="technic__link" href="#">
+                Ремонт планшетов
+                <img class="technic__img scale" src="./img/icon/go.svg" alt="Кнопка переход по ссылке">
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </article>
+        <button type="button" class="showAll scale">
+          <img class="showAll__ic" src="./img/icon/ic.svg" alt="Кнопка показать все">
+          <p class="showAll__text">Показать все</p>
+        </button>
+      </section>
+
+      <section class="prices">
+        <header class="header">Цены на услуги</header>
+        <article class="swiper">
+          <ul class="swiper-wrapper list__reset">
+            <li class="swiper-slide price">
+              <p class="price__text">
+                <span class="price__title">Ремонтные услуги</span>Диагностика
+              </p>
+              <p class="price__text">
+                <span class="price__title">Цена</span>Бесплатно
+              </p>
+              <p class="price__text">
+                <span class="price__title">Срок</span>30 мин
+              </p>
+              <a class="price__link scale">Заказать</a>
+            </li>
+            <li class="swiper-slide price">
+              <p class="price__text">
+                <span class="price__title">Ремонтные услуги</span>Замена дисплея
+              </p>
+              <p class="price__text">
+                <span class="price__title">Цена</span>1 000 ₽
+              </p>
+              <p class="price__text">
+                <span class="price__title">Срок</span>30-120 мин
+              </p>
+              <a class="price__link scale">Заказать</a>
+            </li>
+            <li class="swiper-slide price">
+              <p class="price__text">
+                <span class="price__title">Ремонтные услуги</span>Замена полифонического динамика
+              </p>
+              <p class="price__text">
+                <span class="price__title">Цена</span>1 000 ₽
+              </p>
+              <p class="price__text">
+                <span class="price__title">Срок</span>30-120 мин
+              </p>
+              <a class="price__link scale">Заказать</a>
+            </li>
+            <li class="swiper-slide price">
+              <p class="price__text">
+                <span class="price__title">Ремонтные услуги</span>Тестирование
+                с выдачей технического заключения
+              </p>
+              <p class="price__text">
+                <span class="price__title">Цена</span>1 000 ₽
+              </p>
+              <p class="price__text">
+                <span class="price__title">Срок</span>30-120 мин
+              </p>
+              <a class="price__link scale">Заказать</a>
+            </li>
+            <li class="swiper-slide price">
+              <p class="price__text">
+                <span class="price__title">Ремонтные услуги</span>Замена программного обеспечения
+              </p>
+              <p class="price__text">
+                <span class="price__title">Цена</span>1 000 ₽
+              </p>
+              <p class="price__text">
+                <span class="price__title">Срок</span>30-120 мин
+              </p>
+              <a class="price__link scale">Заказать</a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </article>
+        <p class="offer">
+          Все цены указаны с учетом НДС. Стоимость ремонта указана на
+          единичную услугу. Для получения коммерческого предложения на
+          постоянное обслуживание, оставьте заявку.
+          <a href="" class="offer__link"> Получить коммерческое предложение
+            <img src="./img/icon/golink.svg" alt="Переход по ссылке">
+          </a>
+        </p>
+      </section>
+      
+      <footer class="footer">
+        <div class="footer__copyright">
+          <p>© 2019 CPS</p>
+          <p>Разработано командой Apesong</p>
+        </div>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+        <p class="footer__disclaimer">Информация, размещенная на данной странице, не является публичной офертой</p>
+      </footer>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./js/index.js"></script>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
