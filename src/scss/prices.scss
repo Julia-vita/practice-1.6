@@ -1,0 +1,217 @@
+.prices {
+  position: relative;
+  background-color: #f8f8f8;
+  height: 584px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  @media (min-width: 768px) {
+    height: auto;
+    padding: 24px;
+    margin-bottom: 47px;
+  }
+  @media (min-width: 1120px) {
+    padding: 32px;
+    margin-bottom: 50px;
+  }
+
+  .header {
+    box-sizing: border-box;
+    padding: 16px 0;
+    width: 100%;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    height: 56px;
+    letter-spacing: -0.2px;
+    font-weight: 450;
+    color: #7E7E82;
+    text-transform: uppercase;
+    line-height: 24px;
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+    @media (min-width: 1110px) {
+      padding-right: 33px;
+      display: block;
+    }
+  }
+  .swiper {
+    height: 228px;
+    @media (min-width: 768px) {
+      height: 324px;
+      row-gap: 0;
+      margin-right: 24px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      position: static;
+      z-index: 10;
+    }
+    @media (min-width: 1120px) {
+      margin-right: 32px;
+    }
+  }
+
+  .swiper-wrapper {
+    @media (min-width: 768px) {
+      position: static;
+    }
+  }
+  .swiper__more {
+    height: auto !important;
+    overflow: auto;
+  }
+
+  .swiper::after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 200px;
+    background: linear-gradient(270deg, #ffffff 16.84%, rgba(248, 248, 248, 0.1) 100%);
+    z-index: 1;
+    right: 0;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .swiper .swiper-pagination {
+    top: 210px;
+  }
+
+  .price {
+    width: 260px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    
+    .price__text:first-child {
+      width: 228px;
+      height: 56px;
+    }
+    @media (min-width: 768px) {
+      min-width: 720px;
+      width: 100%;
+      height: 64px;
+      padding: 16px;
+      column-gap: normal;
+      justify-content: space-between;
+      .price__text:first-child {
+        width: 348px;
+        height: auto;
+      }
+      .price__text:nth-child(2) {
+        width: 74px;
+      }
+      .price__text:nth-child(3) {
+        width: 81px;
+      }
+      &::after {
+        position: absolute;
+        width: 95%;
+        content: '';
+        height: 1px;
+        bottom: 0;
+        background-color: #eaeaea;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+    @media (min-width: 1120px) {
+      padding: 16px 24px;
+    }
+  }
+
+  .price__text {
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .price__title {
+    color: #7e7e82;
+    padding-bottom: 3px;
+    line-height: 16px;
+    display: block;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .price__link {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.15px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    padding-left: 12px;
+    width: 119px;
+    height: 32px;
+    border-radius: 20px;
+    background: no-repeat url(../img/icon/gobtn.svg) 90px 3px, 0 0 #ff3e79;
+    @media (min-width: 768px) {
+      position: static;
+      margin: 0;
+    }
+  }
+    .offer {
+      min-width: 288px;
+      max-width: 421px;
+      margin-left: 8px;
+      margin-right: 16px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      @media (min-width: 768px) {
+        margin: 0;
+      }
+    }
+  
+    .offer__link {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 30%;
+      width: 192px;
+      height: 55px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #1B1C21;
+      margin-top: 8px;
+      
+      &:hover{
+        color: #FF3E79;
+       }
+      @media (min-width: 520px) {
+        width: 316px;
+        height: 24px;
+        margin-right: 45%;
+        
+        &:hover{
+          color: #FF3E79;
+         }
+      }
+      @media (min-width: 768px) {
+        margin-left: 0;
+      }
+    }
+    }
+  
+  
+  
+

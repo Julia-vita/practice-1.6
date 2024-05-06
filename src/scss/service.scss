@@ -1,0 +1,232 @@
+.service {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 32px;
+    row-gap: 16px;
+    padding: 0 16px;
+    padding-right: 0;
+    padding-bottom: 24px;
+    background-color: #f8f8f8;
+    box-shadow: inset 0px -1px 0 0 #d9fff5;
+    @media (min-width: 768px) {
+      row-gap: 32px;
+      column-gap: 48px;
+      padding-left: 24px;
+      padding-bottom: 32px;
+    }
+    @media (min-width: 1120px) {
+      row-gap: 8px;
+      column-gap: 48px;
+      padding-left: 33px;
+      padding-bottom: 51px;
+    }
+    &::before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #d9fff5;
+      z-index: 11;
+      @media (min-width: 1366px) {
+        display: none;
+      }
+    }
+  }
+  
+  .title {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 8px 0;
+    .title__button {
+      display: none;
+    }
+    
+    @media (min-width: 1366px) {
+      width: 100%;
+      display: flex;
+      column-gap: 32px;
+      align-items: center;
+      padding-top: 0;
+      padding-right: 30px;
+      margin-top: 42px;
+      .title__button {
+        width: 173px;
+        display: flex;
+        gap: 8px;
+        &:first-child {
+          margin-left: auto;
+        }
+      }
+    }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: -4px;
+      @media (min-width: 1366px) {
+        width: 4px;
+        top: 42px;
+        left: 2px;
+      }
+      border-radius: 20px;
+      width: 8px;
+      height: 40px;
+      background-color: #41f6d7;
+    }
+    .button__textContent {
+      display: none;
+      
+      @media (min-width: 1366px) {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+  }
+  
+  .menu {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: #7e7e82;
+    @media (min-width: 1120px) {
+      height: 80px;
+      flex-wrap: wrap;
+      column-gap: 10px;
+    }
+  }
+  .menu__button {
+    height: 40px;
+    text-wrap: nowrap;
+    padding: 8px 16px;
+    border-radius: 10px;
+    vertical-align: middle;
+    &:hover {
+      cursor: pointer;
+      box-shadow: inset 0 0 0 2px #b8ffec;
+      background-color: #ffffff;
+    }
+  }
+  
+  .article {
+    width: auto;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1b1c21;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-right: 16px;
+    
+    @media (min-width: 768px) {
+      width: 40.625%;
+      line-height: 20px;
+      margin: 0;
+      row-gap: 10px;
+  
+    }
+    @media (min-width: 1120px) {
+      width: 490px;
+      margin: 0;
+      row-gap: 14px;
+      height: 198px;
+    }
+
+    .article__second {
+    @media (min-width: 768px) {
+    display: block;
+    }
+     }
+    .article__third {
+     @media (min-width: 1120px) {
+       display: inline;
+     }
+     }
+
+    .article__container {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      @media (min-width: 768px) {
+        height: 160px;
+      }
+      height: 90px;
+      overflow: hidden;
+    }
+  }
+  
+  .article__container__more {
+    height: auto !important;
+  }
+  .readmore {
+    height: 24px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-right: 8px;
+
+    .readmore__ic {
+      margin: auto 8px;
+      padding-right: 8px;
+    }
+    .readmore__text {
+      margin: auto 0;
+    }
+    &:hover {
+      cursor: pointer;
+      transition: 0.5s;
+      border-radius: 3px;
+      box-shadow: 0 0 1px 2px #B8FFEC;
+    }
+  }
+  
+  .readmore__active {
+    transform: translateY(12px);
+    .readmore__ic__active {
+      transform: rotate(180deg);
+      padding-left: 8px;
+      padding-right: 0;
+    }
+  }
+  .article__img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    justify-self: center;
+    margin-left: -16px;
+
+    @media (min-width: 768px) {
+      width: auto;
+      height: auto;
+      margin-right: 24px;
+      flex-wrap: nowrap;
+      margin-left: 0;
+      max-width: 100%;
+      margin-bottom: auto;
+      transform: scale(auto);
+    }
+    @media (min-width: 1120px) {
+      width: 531.35px;
+      height: 307px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }

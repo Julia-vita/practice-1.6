@@ -1,0 +1,17 @@
+.icon {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+  } 
+  
+  .icon:active {
+    background: #f0074d;
+  }
+
+  .scale:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+  } 
+
+  

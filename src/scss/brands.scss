@@ -1,0 +1,158 @@
+.showAll {
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      font-size: 16px;
+      height: 24px;
+      letter-spacing: -0.2px;
+      font-weight: 500;
+      line-height: 24px;
+      padding-right: 8px;
+      .showAll__ic {
+        margin: auto 8px;
+        padding-right: 8px;
+      }
+      .showAll__text {
+        margin: auto 0;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 3px;
+      box-shadow: 0 0 3px 2px #B8FFEC;
+    }
+  }
+  .showAll__active {
+    transform: translateY(12px);
+    .showAll__ic__active {
+      transform: rotate(180deg);
+      padding-left: 8px;
+      padding-right: 0;
+    }
+  }
+  
+  .brands {
+    height: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    position: relative;
+    background-color: #f8f8f8;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    @media (min-width: 768px) {
+      height: auto;
+      row-gap: 24px;
+      padding-left: 24px;
+      padding-bottom: 32px;
+    }
+    @media (min-width: 1120px) {
+      row-gap: 24px;
+      padding-left: 32px;
+      padding-bottom: 50px;
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #d9fff5;
+      z-index: 11;
+    }
+    .header {
+      width: 100%;
+      height: 80px;
+      box-sizing: border-box;
+      padding: 16px 0;
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      font-weight: 450;
+      background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+      color: #7e7e82;
+      box-shadow: none;
+      text-transform: uppercase;
+      @media (min-width: 768px) {
+        height: 56px;
+      }
+      @media (min-width: 1110px) {
+        display: block;
+        padding-right: 33px;
+      }
+    }
+  
+    .brand {
+      width: 240px;
+      height: 72px;
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 6px;
+      box-shadow: inset 0 0 0 1px #eaeaea;
+      background-color: #ffffff;
+      
+      @media (min-width: 768px) {
+        width: 224px;
+      }
+  
+      @media (min-width: 1110px) {
+        width: 240px;
+      }
+    }
+  
+    .brands__swiper-slide {
+      min-width: 0;
+      max-width: 240px;
+      height: 72px;
+    }
+  
+    .brand__link {
+      width: 240px;
+      height: 72px;
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: none;
+      padding-left: 16px;
+      padding-right: 16px;
+     
+      @media (min-width: 768px) {
+        width: 224px;
+      }
+      @media (min-width: 1110px) {
+        width: 240px;
+      }
+    }
+  
+    .brand__hp {
+      padding-left: 11px;
+    }
+  
+    .brand__link:hover {
+      transition: 0.3s;
+      border-radius: 6px;
+      box-shadow:inset 0 0 3px 2px #B8FFEC;
+    }
+  
+    .apple__icon {
+      margin-bottom: 4px;
+    }
+  
+    .brand:nth-child(10),
+    .brand:nth-child(11) {
+      @media (min-width: 320px) {
+        display: none;
+      }
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+  }
